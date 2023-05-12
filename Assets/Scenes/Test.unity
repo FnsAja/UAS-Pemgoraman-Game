@@ -215,7 +215,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -294,12 +294,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.19603795, y: -0, z: -0, w: 0.9805963}
-  m_LocalPosition: {x: 1.98, y: 4.07, z: -12.13}
+  m_LocalPosition: {x: -0.026000023, y: 1.03, z: -1.1939888}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1842632927}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 22.611, y: 0, z: 0}
 --- !u!1 &1461281682
 GameObject:
@@ -396,7 +396,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1603001533
 PrefabInstance:
@@ -474,8 +474,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603001535}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aa1cd494d754f1c4fac5707f538f04d2, type: 2}
+  m_Avatar: {fileID: 9000000, guid: c27a4d54bce962e4f8481487d6112c62, type: 3}
+  m_Controller: {fileID: 9100000, guid: e42dd1d2e94071041acb8a40f192f023, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 1842632925}
   - component: {fileID: 1842632924}
   - component: {fileID: 1842632928}
+  - component: {fileID: 1842632929}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -583,8 +584,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1603001534}
+  - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1842632928
 Rigidbody:
@@ -600,5 +602,26 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 48
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &1842632929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842632923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1351d7a547b828243b421e6ddfaf7de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnim: {fileID: 1603001536}
+  playerRigid: {fileID: 1842632928}
+  w_speed: 120
+  wb_speed: 120
+  olw_speed: 120
+  rn_speed: 160
+  ro_speed: 90
+  walking: 0
+  playerTrans: {fileID: 1842632927}
