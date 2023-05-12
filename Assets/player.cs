@@ -81,7 +81,5 @@ public class player : MonoBehaviour
         {
 			playerRigid.velocity = Vector3.zero;
         }
-
-		Debug.Log(playerAnim.GetBool("Idle"));
 	}
 }
