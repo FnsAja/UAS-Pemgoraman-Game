@@ -10,7 +10,7 @@ public class item : MonoBehaviour
     int nonOrganik = 0;
     int score = 0;
     int uang = 0;
-    public GameObject WinPanel, PausePanel, LosePanel;
+    public GameObject WinPanel, PausePanel, LosePanel, StartPanel;
     public Text Skor, Uang;
     public Text SkorWin, SkorLose;
 
@@ -38,6 +38,7 @@ public class item : MonoBehaviour
     public void Back()
     {
         PausePanel.SetActive(false);
+        StartPanel.SetActive(false);
     }
 
     public void play(string scene_name)
