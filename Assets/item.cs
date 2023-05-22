@@ -53,7 +53,7 @@ public class item : MonoBehaviour
             score += 1;
             organik += 1;
             uang += 1000;
-            Skor.text = "Jumlah Sampah : " + score.ToString();
+            Skor.text = "Sampah : " + score.ToString();
             Uang.text = "Uang : Rp" + uang.ToString();
             GameObject.Find("Collect Sound").GetComponent<AudioSource>().Play();
         }
@@ -63,7 +63,7 @@ public class item : MonoBehaviour
             score += 1;
             nonOrganik += 1;
             uang += 1500;
-            Skor.text = "Jumlah Sampah : " + score.ToString();
+            Skor.text = "Sampah : " + score.ToString();
             Uang.text = "Uang : Rp" + uang.ToString();
             GameObject.Find("Collect Sound").GetComponent<AudioSource>().Play();
         }
